@@ -1,0 +1,4 @@
+interface:
+  display_name: "Alex Olson Voice"
+  short_description: "Draft, rewrite, summarize, and edit prose in Alex Olson's voice"
+  default_prompt: "Use $alex-olson-voice-skill to draft or revise this writing in Alex Olson's voice while preserving factual accuracy and audience fit."
