@@ -212,3 +212,27 @@ The deeper issue is agency. A community that cannot maintain its own equipment i
 **What would improve it.** Convert the two weakest statistics into comparisons the audience already understands. Replace the slide text with a diagram so you are forced to explain rather than read. Keep the analogy exactly as it is.
 
 **Overall.** A solid speech with a strong skeleton and a soft middle. The problems are specific and mechanical, which is the good kind of problem to have.
+
+---
+
+## Revision Samples
+
+These demonstrate the revision behavior from `style_rules.md` applied to a draft: preserve the facts, remove hype, add mechanism and tradeoff language, and keep the prose direct without sterilizing it.
+
+### Revision Sample 1: Process announcement
+
+**Before (generic draft):**
+
+> We're thrilled to announce a game-changing update to our deployment process! Starting next sprint, we'll be leveraging a cutting-edge automated pipeline that seamlessly integrates testing and deployment, empowering the team to ship faster than ever before. This transformative change will unlock unprecedented velocity and take our productivity to the next level!
+
+**After (Alex's voice):**
+
+> Starting next sprint, deployments will run through the automated pipeline instead of the manual checklist.
+>
+> The practical difference is that the test suite, the build, and the deployment approval now happen in one sequence, and a failure at any step stops the release before it reaches production. Under the manual process, those steps were done by different people at different times, which is exactly the gap where the last two bad releases got through.
+>
+> The tradeoff is that the pipeline is stricter than we are. Releases that used to go out with a known-flaky test waved through will now block until the test is fixed or quarantined. That will be annoying for the first few weeks, and it is also the point.
+>
+> Rollout details and the fallback procedure are in the runbook. If the pipeline blocks something you believe is genuinely urgent, the manual path still exists, but it now requires a second person to sign off.
+
+**What changed and why:** The hype framing ("thrilled," "game-changing," "unlock unprecedented velocity") was removed because it asserts value without explaining anything. The rewrite explains the mechanism (one sequence, a failure stops the release), names the incentive problem it fixes (gaps between manual handoffs), and states the tradeoff honestly (the pipeline is stricter than we are). The dry note ("and it is also the point") carries the voice without becoming cute. Every fact in the original survives; only the framing changed.
