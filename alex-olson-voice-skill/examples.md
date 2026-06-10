@@ -164,3 +164,51 @@ Regenerate the frontend API client after backend endpoint, DTO, or OpenAPI chang
 ## Follow-up
 
 Commit the regenerated client in the same change as the backend modification. A generated client committed separately is a merge conflict waiting for the least convenient moment.
+
+---
+
+## Personal Reflection Samples
+
+### Personal Reflection Sample 1: On practice
+
+For a long time I treated discipline as a personality trait, something other people had and I would need to fake. The assumption was convenient because it made the problem unsolvable, and unsolvable problems do not require any work.
+
+What changed my mind was not motivation. It was structure. When I committed to a small daily practice, the interesting part was not the activity itself but watching my own resistance to it. The first week was easy because it was novel. The third week was the real test, because the novelty was gone and the results had not arrived yet. That gap between effort and evidence is where I had always quit before.
+
+The thing that worked was lowering the bar instead of raising it. Ten minutes I would actually do beat an hour I would plan and skip. It felt almost embarrassing to count something that small as progress, though the alternative was counting nothing at all.
+
+I am not going to claim the problem is solved. I still negotiate with myself on bad days, and I still lose some of those negotiations. But I now treat consistency as a system to be debugged rather than a character flaw, and that reframe has done more than any amount of resolve ever did.
+
+---
+
+## Persuasive Samples
+
+### Persuasive Sample 1: The right to repair
+
+When a farmer cannot fix his own tractor without the manufacturer's permission, something has gone wrong that has nothing to do with agriculture.
+
+The mechanism is straightforward. Modern equipment pairs physical parts with software locks, and manufacturers control the diagnostic tools that authorize a repair. Even when the owner can identify the broken part, buy the replacement, and install it correctly, the machine can refuse to run until an authorized technician blesses the repair. Ownership has been quietly converted into a license, and the license terms favor the people who wrote them.
+
+The harm is concrete. Repairs get delayed during the exact weeks when a working machine matters most. Independent repair shops, which kept rural communities running for generations, lose access to the work. Prices rise because the alternative to the dealership is no longer a competitor but a locked bootloader.
+
+The usual counterargument is safety and intellectual property, and it deserves a fair hearing. Nobody wants counterfeit firmware in a combine. But there is a difference between protecting code from theft and using code to monopolize a repair market. The first is a legitimate interest. The second is rent-seeking with a legal department.
+
+A better path already exists in other industries: standardized diagnostic access, published repair documentation, and parts available at fair terms. None of this requires manufacturers to give away their software. It requires them to let owners actually own what they bought.
+
+The deeper issue is agency. A community that cannot maintain its own equipment is dependent in a way that compounds. Repair is not nostalgia. It is the practical form of independence, and it is worth defending while there is still something left to defend.
+
+---
+
+## Critique Samples
+
+### Critique Sample 1: Informative speech review
+
+**What worked.** The structure was the strongest part of the speech. You defined the system before evaluating it, which meant the audience always knew what the moving parts were before being asked to care about them. The analogy comparing packet routing to a postal system was effective because it was accurate at the level you used it, and you dropped it before it broke down.
+
+**What did not work.** The middle section leaned on statistics without anchoring them. Numbers like "forty percent" only land when the audience knows forty percent of what, compared to what baseline. There were also two spots where you read directly from the slide, and the energy dropped both times.
+
+**Why it matters.** An informative speech lives or dies on whether the audience can reconstruct the explanation afterward. Right now they would remember your opening analogy and your closing, but the middle would blur. That is fixable, and the fix is mostly about anchoring, not delivery.
+
+**What would improve it.** Convert the two weakest statistics into comparisons the audience already understands. Replace the slide text with a diagram so you are forced to explain rather than read. Keep the analogy exactly as it is.
+
+**Overall.** A solid speech with a strong skeleton and a soft middle. The problems are specific and mechanical, which is the good kind of problem to have.
