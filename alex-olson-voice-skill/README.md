@@ -18,6 +18,13 @@ Recommended loading order:
 
 For agents that only accept one prompt, use `prompt.md`.
 
+## Package contents
+
+- Core files (load order above): voice definition, rules, adaptation, examples, provenance, fallback.
+- `commands/alex-voice.md`: Claude Code slash command; the fast path for one-off requests.
+- `agents/openai.yaml`: interface metadata for platforms that surface skills as named agents.
+- `manifest.json`: machine-readable package metadata.
+
 ## Design principle
 
 `SKILL.md` tells the agent how to use the skill. `voice_profile.md` defines the voice. The other files constrain, adapt, or support the voice.
