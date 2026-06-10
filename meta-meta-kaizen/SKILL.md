@@ -397,7 +397,7 @@ These behaviors constitute fake progress at the process level. Actively guard ag
 
 **From Meta-Kaizen (L1):**
 
-- The 7-step iteration loop (analyze, identify weakness, improve, review, compare, assess, redirect) is the structural template for process iteration at L2
-- The 4 stopping conditions (count, plateau, diminishing returns, completion) are inherited and extended with meta-plateau (condition 5)
+- The 7-step iteration loop (analyze, identify weakness, improve, verify/review, compare, assess, redirect) is the structural template for process iteration at L2
+- The core stopping conditions (count, plateau, diminishing returns, completion) are inherited and extended with meta-plateau (condition 5); Meta-Kaizen's hard cap and regression-loop conditions apply at L1 only
 - The priority ordering (structural > strategic > functional > clarity > performance > polish) is elevated to process-level equivalents
 - The output format (per-iteration + final summary) is inherited and extended with process-specific metrics and project-wide tables
