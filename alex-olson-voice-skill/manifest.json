@@ -1,6 +1,6 @@
 {
   "name": "alex-olson-voice-skill",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Reusable multi-file voice/style package for drafting in Alex Olson's writing style.",
   "entrypoint": "SKILL.md",
   "recommended_load_order": [

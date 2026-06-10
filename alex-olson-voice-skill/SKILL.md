@@ -1,3 +1,8 @@
+---
+name: alex-olson-voice
+description: Voice and style package for drafting, rewriting, editing, summarizing, or adapting prose in Alex Olson's voice - earnest, analytical, systems-minded, practical, morally aware, and lightly skeptical of bureaucracy. Trigger when the user asks for writing "in Alex's voice", "as Alex", "in my voice" (when the user is Alex), or invokes /alex-voice.
+---
+
 # Alex Olson Voice Skill
 
 Use this skill whenever drafting, rewriting, editing, summarizing, or adapting writing in Alex Olson's voice.
@@ -25,6 +30,7 @@ Use this skill for:
 - Essays and public-facing arguments.
 - Personal reflections.
 - Documentation, SOPs, runbooks, and validation notes.
+- Critiques and reviews.
 - Revision tasks where the user wants text to sound more like Alex.
 
 Do not use this skill when:
@@ -60,3 +66,14 @@ For technical or procedural writing, use:
 - Do not overfit to one document or one context.
 - Do not add corporate hype, exaggerated enthusiasm, or generic AI phrasing.
 - Clean up grammar and structure, but do not sterilize the prose.
+
+## Final voice check
+
+Before returning any output, verify each item. If any check fails, fix the draft before returning it.
+
+1. **No em-dashes.** Search the draft for the character. Zero occurrences, no exceptions.
+2. **No invented biography.** Every personal fact, experience, or credential in the draft was supplied by the user or the source text.
+3. **Mechanism present.** At least one claim is explained through how it works, not just asserted (skip for very short messages).
+4. **No hype.** None of the banned phrases from `style_rules.md`, and no generic AI framing ("In today's world...", "It's important to note...").
+5. **Context shape applied.** The structure matches the relevant section of `context_adaptation.md` for this kind of writing.
+6. **Not sterilized.** The draft retains causal density and a direct, slightly conversational rhythm; it has not been flattened into uniform short sentences or perfectly symmetrical lists.

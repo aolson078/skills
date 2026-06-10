@@ -131,4 +131,36 @@ Regenerate the frontend API client after backend endpoint, DTO, or OpenAPI chang
    dotnet build --verbosity minimal
    ```
 
-> Note: This documentation sample currently includes only the portion provided in chat. Add the remaining runbook steps when available.
+2. Export the current OpenAPI document:
+
+   ```bash
+   dotnet run --project src/Api -- export-openapi --output src/web/swagger.json
+   ```
+
+3. From `src/web`, regenerate the client:
+
+   ```bash
+   npm run generate:api
+   ```
+
+4. Build the frontend to surface any type breaks immediately:
+
+   ```bash
+   npm run build
+   ```
+
+## Known failure modes
+
+- The generator runs against a stale `swagger.json` because the export step was skipped. The client regenerates cleanly and still misses the new endpoints.
+- Type errors appear in components unrelated to the change. This usually means a shared DTO was renamed and the old generated types were masking the break.
+- The generated client compiles but requests fail at runtime. Check that the backend route prefix matches what the generator was configured with.
+
+## Verification
+
+1. `git diff src/web/src/api` shows changes only in the endpoints you expect.
+2. The frontend build passes with no type errors.
+3. One representative call to a changed endpoint succeeds against a locally running backend.
+
+## Follow-up
+
+Commit the regenerated client in the same change as the backend modification. A generated client committed separately is a merge conflict waiting for the least convenient moment.
